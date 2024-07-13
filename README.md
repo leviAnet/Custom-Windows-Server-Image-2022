@@ -74,7 +74,7 @@ cp windowsxxx.gz /var/www/html/
 Buka browser, download dengan mengakses VPSnya. Ubah yyy dengan ip kalian, xxx untuk versi Windows Server yang kalian pilih
 
 ```jsx
-http://yyy.yyy.yyy/windows2xxx.gz
+http://IP-IP-IP/windows2022.gz
 ```
 
 ## 5. Setting Agar Bisa Diakses via RDP :
