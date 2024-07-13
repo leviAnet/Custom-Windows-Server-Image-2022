@@ -82,6 +82,6 @@ http://IP-IP-IP/windows2022.gz
 Create droplet baru dan ikuti petunjuk yang ada di YouTube
 
 ```jsx
-wget -O- --no-check-certificate http://yyy.yyy.yyy/windowsxxxx.gz | gunzip | dd of=/dev/vda
+wget -O- --no-check-certificate http://ip.ip.ip/windows2022.gz | gunzip | dd of=/dev/vda
 ```
 
