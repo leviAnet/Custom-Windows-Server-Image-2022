@@ -50,7 +50,7 @@ Buka RealVNC Viewer, masukkan IP VPS kalian. Setelah itu ikuti langkah langkah y
 Kompress Windows Server Img kalian
 
 ```jsx
-dd if=windows2xxx.img | gzip -c>windows2xxx.gz
+dd if=windows2022.img | gzip -c>windows2022.gz
 ```
 
 Install Apache
