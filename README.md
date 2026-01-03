@@ -32,8 +32,8 @@ qemu-system-x86_64 \
 -cpu host \
 -enable-kvm \
 -boot order=d \
--drive file=windows2022.iso,media=cdrom \
--drive file=windows2022.img,format=raw,if=virtio \
+-drive file=windows2019.iso,media=cdrom \
+-drive file=windows2019.img,format=raw,if=virtio \
 -drive file=virtio-win.iso,media=cdrom \
 -device usb-ehci,id=usb,bus=pci.0,addr=0x4 \
 -device usb-tablet \
@@ -50,7 +50,7 @@ Buka RealVNC Viewer, masukkan IP VPS kalian. Setelah itu ikuti langkah langkah y
 Kompress Windows Server Img kalian
 
 ```jsx
-dd if=windows2022.img | gzip -c>windows2022.gz
+dd if=windows2019.img | gzip -c>windows2019.gz
 ```
 
 Install Apache
@@ -74,7 +74,7 @@ cp windows2019.gz /var/www/html/
 Buka browser, download dengan mengakses VPSnya. Ubah yyy dengan ip kalian, xxx untuk versi Windows Server yang kalian pilih
 
 ```jsx
-http://IP-IP-IP/windows2022.gz
+http://IP-IP-IP/windows2019.gz
 ```
 
 ## 5. Setting Agar Bisa Diakses via RDP :
@@ -82,6 +82,6 @@ http://IP-IP-IP/windows2022.gz
 Create droplet baru dan ikuti petunjuk yang ada di YouTube
 
 ```jsx
-wget -O- --no-check-certificate http://ip.ip.ip/windows2022.gz | gunzip | dd of=/dev/vda
+wget -O- --no-check-certificate http://ip.ip.ip/windows2019.gz | gunzip | dd of=/dev/vda
 ```
 
