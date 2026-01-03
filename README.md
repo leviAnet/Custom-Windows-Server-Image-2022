@@ -68,7 +68,7 @@ sudo ufw allow 'Apache'
 Pindahkan file Windows Server Image kalian biar bisa di download
 
 ```powershell
-cp windowsxxx.gz /var/www/html/
+cp windows2019.gz /var/www/html/
 ```
 
 Buka browser, download dengan mengakses VPSnya. Ubah yyy dengan ip kalian, xxx untuk versi Windows Server yang kalian pilih
